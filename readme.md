@@ -31,7 +31,7 @@ accept(params, schema, function(err, accepted){
 ```
 Will output:
 
-```json
+```
 [ { field: 'phone', message: 'Not a valid integer' }, // Invalid match with regex
   { field: 'location', message: 'Missing Field' } ]   // Not present in the params given
 ```
