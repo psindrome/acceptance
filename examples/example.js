@@ -1,4 +1,4 @@
-var accept = require('../lib/acceptance').accept;
+var accept = require('../index').accept;
 
 var schema = {
   name: {
@@ -15,13 +15,11 @@ var schema = {
 }
 
 var params = { name: 'bradley', phone: '012345hello', random: 'a random param' };
-var a = accept(params, schema);
-if(a.errors) {
-  console.log(a.errors);
-}
-else {
-  console.log(a.accepted);
-}
+
+accept(params, schema, function(err, accepted){
+  if(err) console.log(err);
+  else console.log(accepted);
+});
 
 // will output
 //
