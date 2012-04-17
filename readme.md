@@ -2,7 +2,7 @@ Validate parameters from an object (such as express's ```req.query```) and retur
 
 ```npm install acceptance```
   
-Any parameters not defined in the schema will be discarded in the output ```a.accepted```  
+Any parameters not defined in the schema will be discarded in the output ```accepted```  
   
 ```javascript
 var accept = require('acceptance').accept;
